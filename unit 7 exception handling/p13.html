@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Object Methods</h2>
+<p>A method is a function definition stored as a property value.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+const woman = {
+  firstName: "Jenny",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return woman.firstName + " " + woman.lastName;
+  }
+};
+const man = {
+  firstName: ["John", 'Johny'],
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return man.firstName + " " + man.lastName;
+  }
+};
+document.getElementById("demo").innerHTML = woman.fullName();
+document.getElementById("demo2").innerHTML = man.fullName();
+document.getElementById("demo3").innerHTML = man.firstName[1];
+
+</script>
+</body>
+</html>

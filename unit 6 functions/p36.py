@@ -1,0 +1,5 @@
+letters = ('m', 'r', 'o', 't', 's')
+fSet = frozenset(letters)
+fSet.remove('m')
+print('Frozen set is:', fSet)
+print('Empty frozen set is:', frozenset())

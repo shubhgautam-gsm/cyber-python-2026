@@ -1,0 +1,9 @@
+Control the amount of data to read: You specify 10
+because you want to read the first 10 bytes (or characters)
+of the file. This can be useful if you need to process the
+file in chunks or if you're just interested in a small part
+of the file.
+
+Efficiency: Reading the file in chunks (e.g., 10 bytes at a time) 
+can be more efficient when dealing with large files, instead of 
+loading the entire file into memory all at once.
